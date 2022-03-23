@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ejercicio 3 - Condicionales 2</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ejercicio de alertas matemáticas">
+    <meta name="keywords" content="HTML, CSS, Javascript">
+    <meta name="author" content="Paula Echeverría">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Este ejercicio utiliza JQuery por lo que se manda llamar de este mundo-->
+    <script>
+        function responder () {
+            var nombre = $("#nombre").val();
+            if (nombre == "John Deacon") {
+                alert('Respuesta correcta');
+             } else {// para la respuesta incorrecta, en este caso es, si no se cumple la primera, se ejecuta la segunda
+            alert('Respuesta incorrecta');
+        }
+        }
+    </script>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css" type="text/css">
+</head>
+
+<body>
+    <div class="container principal">
+        <h1> Ejercicio 3 - Condicionales 2</h1>
+        <br>
+        <h2> Cuestionario de condicional</h2>
+
+        <form>
+            <p>¿Quién es el integrante bajista de Queen?</p>
+            <input type="text" name="nombre" placeholder="Escribe la respuesta" />
+            <button onclick="responder();"> Responder</button>
+        </form>
+<br>
+<h2> El código utilizado fue:</h2>
+<code>fuction responder() {<br>
+    var nombre = $("#nombre").val();<br>
+    if (nombre == "John Deacon") {<br>
+        alert('Respuesta correcta');<br>
+     } else {// para la respuesta incorrecta, en este caso es, si no se cumple la primera, se ejecuta la segunda
+    alert('Respuesta incorrecta');
+}
+}
+</code>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,12 @@
+/* Hoja de estilos para ejercicios */
+body {
+    background-color:lightpink;}
+.principal {
+    background-color:aqua;
+}
+#ultimas a {
+    font-size: 14px;
+    color: darkcyan;
+    font-weight: normal;
+    margin-bottom: 10px;;
+}
